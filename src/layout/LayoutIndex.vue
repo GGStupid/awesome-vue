@@ -16,7 +16,7 @@ import SiderIndexVue from "./sider/SiderIndex.vue";
 </script>
 
 <style lang="scss" scoped>
-@import "@/style/index.scss";
+@import "@/styles/index.scss";
 
 .layout {
   width: 100%;
@@ -33,5 +33,6 @@ import SiderIndexVue from "./sider/SiderIndex.vue";
 .layout-content {
   width: calc(100% - $siderWidth);
   height: 100%;
+  overflow: auto;
 }
 </style>
