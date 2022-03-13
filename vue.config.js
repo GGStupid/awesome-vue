@@ -8,4 +8,12 @@ module.exports = defineConfig({
       },
     },
   },
+  devServer: {
+    proxy: {
+      "/api": {
+        target: "http://localhost:3004",
+        pathRewrite: { "^/api": "" },
+      },
+    },
+  },
 });
